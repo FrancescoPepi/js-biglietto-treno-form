@@ -36,11 +36,56 @@
               alt="..."
             />
             <div class="card-body">
-              <p id="km"></p>
-              <p id="age"></p>
-              <p id="discount"></p>
-              <p id="price-discount"></p>
-              <p id="price"></p>
+              <!-- FORM DA COMPILARE -->
+              <div class="text-center">
+                <div class="form-floating mb-3">
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="name-user"
+                    placeholder="@Luciano"
+                  />
+                  <label for="name-user">Nome</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="km-input"
+                    placeholder="@20km"
+                  />
+                  <label for="km-input">Chilometri</label>
+                </div>
+                <!-- età -->
+                <select
+                  id="age-user"
+                  class="form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected>Scegli la fascia d'età</option>
+                  <option value="1">Minorenne</option>
+                  <option value="2">Magiorenne</option>
+                  <option value="3">Anziano</option>
+                </select>
+
+                <p id="km"></p>
+                <p id="age"></p>
+                <p id="discount"></p>
+                <p id="price-not-discount"></p>
+                <p id="price"></p>
+
+                <button
+                  id="search-button"
+                  type="button"
+                  class="btn btn-warning mt-3"
+                >
+                  Cerca
+                </button>
+                <button type="button" class="btn btn-warning mt-3">
+                  Reset
+                </button>
+              </div>
+
               <p id="message" class="text-center fs-2">Buon viaggio</p>
             </div>
           </div>
