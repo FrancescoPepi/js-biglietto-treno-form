@@ -29,15 +29,16 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col col-md-4 mx-auto">
-          <div class="card mt-3 mx-auto">
+          <div class="card mx-auto">
             <img
               src="./IMG/ticket.png"
               class="card-img-top w-75 m-auto"
               alt="..."
             />
-            <div class="card-body">
+            <div class="card-body text-center">
               <!-- FORM DA COMPILARE -->
-              <div class="text-center">
+
+              <div id="container-input" class="">
                 <div class="form-floating mb-3">
                   <input
                     type="name"
@@ -49,7 +50,7 @@
                 </div>
                 <div class="form-floating mb-3">
                   <input
-                    type="number"
+                    type="text"
                     class="form-control"
                     id="km-input"
                     placeholder="@20km"
@@ -63,28 +64,37 @@
                   aria-label="Default select example"
                 >
                   <option selected>Scegli la fascia d'età</option>
-                  <option value="1">Minorenne</option>
-                  <option value="2">Magiorenne</option>
-                  <option value="3">Anziano</option>
+                  <option value="Minorenne">Minorenne</option>
+                  <option value="Maggiorenne">Maggiorenne</option>
+                  <option value="Anziano">Anziano</option>
                 </select>
-
-                <p id="km"></p>
-                <p id="age"></p>
-                <p id="discount"></p>
-                <p id="price-not-discount"></p>
-                <p id="price"></p>
-
-                <button
-                  id="search-button"
-                  type="button"
-                  class="btn btn-warning mt-3"
-                >
-                  Cerca
-                </button>
-                <button type="button" class="btn btn-warning mt-3">
-                  Reset
-                </button>
               </div>
+
+              <div id="container-output" class="d-none">
+                <p id="name-output"></p>
+                <p id="km-output"></p>
+                <p id="age-output"></p>
+                <p id="discount-output"></p>
+                <p id="price-not-discount-output"></p>
+                <p id="price-discount-output"></p>
+                <p id="price-output"></p>
+              </div>
+
+              <button
+                id="search-button"
+                type="button"
+                class="btn btn-warning mt-3"
+              >
+                Cerca
+              </button>
+
+              <button
+                id="reset-button"
+                type="button"
+                class="btn btn-warning mt-3"
+              >
+                Reset
+              </button>
 
               <p id="message" class="text-center fs-2">Buon viaggio</p>
             </div>
